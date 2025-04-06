@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Rating from "../components/Rating";
 const Home = () => {
   return <div className="container mx-auto px-4 py-8">
-      <div className="flex flex-col md:flex-row gap-8 items-center text-lg">
+      <div className="flex flex-col md:flex-row gap-8 items-center">
         <div className="w-full md:w-1/2">
           <h1 className="mb-4">
             <span className="text-7xl font-bold text-orange-500 block mb-1">Fast</span>
@@ -30,7 +30,7 @@ const Home = () => {
           </div>
         </div>
         <div className="w-full md:w-1/2">
-          <img src="/lovable-uploads/4547bf14-4819-4fe3-964c-de01eeb128fd.png" alt="Food Delivery Illustration" className="max-w-full h-auto" />
+          <img alt="Food Delivery Illustration" className="max-w-full h-auto" src="/lovable-uploads/7230832b-640e-41c0-bf55-f99ed89b32a3.png" />
         </div>
       </div>
     </div>;
