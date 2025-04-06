@@ -1,11 +1,8 @@
-
 import { Play } from "lucide-react";
 import { Link } from "react-router-dom";
 import Rating from "../components/Rating";
-
 const Home = () => {
-  return (
-    <div className="container mx-auto px-4 py-8">
+  return <div className="container mx-auto px-4 py-8">
       <div className="flex flex-col md:flex-row gap-8 items-center">
         <div className="w-full md:w-1/2">
           <h1 className="mb-4">
@@ -16,10 +13,7 @@ const Home = () => {
             Sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium doloremque laudantium
           </p>
           <div className="flex flex-wrap gap-4 mb-8">
-            <Link 
-              to="/menu" 
-              className="px-8 py-4 bg-zinc-800 text-white rounded-full hover:bg-zinc-700 transition-colors font-medium"
-            >
+            <Link to="/menu" className="px-8 py-4 bg-zinc-800 text-white rounded-full hover:bg-zinc-700 transition-colors font-medium">
               Order Now
             </Link>
             <button className="flex items-center gap-2 px-8 py-4 bg-white border border-gray-200 rounded-full hover:bg-gray-50 transition-colors">
@@ -36,15 +30,9 @@ const Home = () => {
           </div>
         </div>
         <div className="w-full md:w-1/2">
-          <img 
-            src="/lovable-uploads/4547bf14-4819-4fe3-964c-de01eeb128fd.png" 
-            alt="Food Delivery Illustration" 
-            className="max-w-full h-auto"
-          />
+          <img alt="Food Delivery Illustration" className="max-w-full h-auto" src="/lovable-uploads/7230832b-640e-41c0-bf55-f99ed89b32a3.png" />
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default Home;
