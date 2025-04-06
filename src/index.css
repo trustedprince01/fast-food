@@ -37,7 +37,7 @@
   }
 
   body {
-    @apply bg-gradient-to-br from-blue-600 via-orange-400 to-orange-500 min-h-screen;
+    @apply bg-gray-50 min-h-screen;
     background-size: cover;
     background-attachment: fixed;
   }
