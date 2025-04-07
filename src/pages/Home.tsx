@@ -1,18 +1,14 @@
-
 import { Play } from "lucide-react";
 import { Link } from "react-router-dom";
 import Rating from "../components/Rating";
-
 const Home = () => {
   return <div className="container mx-auto px-4 py-8">
       <div className="flex flex-col md:flex-row gap-8 items-center">
         <div className="w-full md:w-1/2">
-          <h1 className="mb-4 flex items-start">
+          <h1 className="mb-4 font-normal">
             <span className="text-5xl md:text-7xl font-bold text-orange-500">Fast</span>
-            <div className="flex flex-col ml-2">
-              <span className="text-3xl md:text-4xl font-semibold text-zinc-800">Food</span>
-              <span className="text-3xl md:text-4xl font-semibold text-zinc-800">Delivery</span>
-            </div>
+            <span className="text-3xl md:text-4xl font-semibold text-zinc-800 block md:inline md:ml-2">Food</span>
+            <span className="text-3xl md:text-4xl font-semibold text-zinc-800 block my-[49px]">Delivery</span>
           </h1>
           <p className="text-gray-600 mb-8 max-w-md">
             Sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium doloremque laudantium
@@ -40,5 +36,4 @@ const Home = () => {
       </div>
     </div>;
 };
-
 export default Home;
