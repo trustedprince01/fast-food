@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Menu, Search, ShoppingCart, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -53,20 +52,26 @@ const Navbar = () => {
 
         {/* Search and Cart */}
         <div className="flex items-center gap-4">
-          <div className="relative hidden sm:flex items-center">
-            <Search className="absolute left-3 text-gray-400 h-4 w-4" />
-            <input
-              type="text"
-              placeholder="Search"
-              className="bg-gray-100 pl-10 pr-4 py-2 rounded-full w-48 text-sm focus:outline-none focus:ring-2 focus:ring-[#ff8a00]/50"
-            />
-          </div>
-          <div className="relative">
-            <ShoppingCart className="h-6 w-6 text-gray-800 hover:text-[#ff8a00] transition-colors cursor-pointer" />
-            <span className="absolute -top-2 -right-2 bg-[#ff8a00] text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
-              2
-            </span>
-          </div>
+          {!isMobile && (
+            <>
+              <div className="relative hidden sm:flex items-center">
+                <Search className="absolute left-3 text-gray-400 h-4 w-4" />
+                <input
+                  type="text"
+                  placeholder="Search"
+                  className="bg-gray-100 pl-10 pr-4 py-2 rounded-full w-48 text-sm focus:outline-none focus:ring-2 focus:ring-[#ff8a00]/50"
+                />
+              </div>
+              <div className="relative">
+                <ShoppingCart className="h-6 w-6 text-gray-800 hover:text-[#ff8a00] transition-colors cursor-pointer" />
+                <span className="absolute -top-2 -right-2 bg-[#ff8a00] text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
+                  2
+                </span>
+              </div>
+            </>
+          )}
+
+          {/* Hamburger Menu */}
           {isMobile && (
             <Button
               variant="ghost"
@@ -74,7 +79,7 @@ const Navbar = () => {
               onClick={() => setIsOpen(!isOpen)}
               className="md:hidden text-gray-800 hover:text-[#ff8a00] hover:bg-transparent"
             >
-              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              {isOpen ? <X className="h-8 w-8" /> : <Menu className="h-8 w-8" />}
             </Button>
           )}
         </div>
@@ -106,6 +111,13 @@ const Navbar = () => {
                 placeholder="Search"
                 className="bg-gray-100 pl-10 pr-4 py-3 rounded-full w-full text-base focus:outline-none focus:ring-2 focus:ring-[#ff8a00]/50"
               />
+            </div>
+            {/* Cart Icon Inside Mobile Menu */}
+            <div className="relative flex items-center">
+              <ShoppingCart className="h-6 w-6 text-gray-800 hover:text-[#ff8a00] transition-colors cursor-pointer" />
+              <span className="absolute -top-2 -right-2 bg-[#ff8a00] text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
+                2
+              </span>
             </div>
           </div>
         </div>

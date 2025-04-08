@@ -11,11 +11,11 @@ const Hero = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="space-y-8 text-left">
             <div className="space-y-6">
-              <div className="flex flex-col md:flex-row items-center md:items-end text-center md:text-left">
-                <h1 className="text-[#ff8a00] text-7xl md:text-8xl font-bold">
+              <div className="flex flex-row items-center text-left">
+                <h1 className="text-[#ff8a00] text-7xl md:text-8xl font-bold whitespace-nowrap">
                   Fast
                 </h1>
-                <div className="flex flex-col md:ml-4">
+                <div className="flex flex-col ml-4">
                   <h1 className="text-[#333333] text-4xl md:text-5xl font-bold leading-tight">
                     Food
                   </h1>
@@ -25,12 +25,12 @@ const Hero = () => {
                 </div>
               </div>
               <p className="text-gray-600 text-lg max-w-lg mx-auto md:mx-0">
-                Sed ut perspiciatis unde omnis iste natus sit voluptatem
-                accusantium doloremque laudantium
+              But so that you may see from where all this pleasure of accusing 
+              and pain of praising is born.
               </p>
             </div>
 
-            <div className="flex flex-row flex-wrap gap-4 justify-center md:justify-start">
+            <div className="flex flex-row gap-4 justify-center md:justify-start">
               <Button className="bg-[#333333] hover:bg-[#222222] text-white px-8 py-6 rounded-full text-lg h-auto w-fit">
                 Order Now
               </Button>
