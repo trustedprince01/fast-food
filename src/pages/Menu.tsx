@@ -12,7 +12,7 @@ const Menu = () => {
       description: "Served with lorem ipsum",
       price: 1200,
       discount: "25% OFF",
-      image: "/lovable-uploads/76a00dc4-5775-4d96-b7d8-a61dfc668456.png"
+      image: "/lovable-uploads/Cappuccino.jpg"
     },
     {
       id: 2,
@@ -21,15 +21,15 @@ const Menu = () => {
       price: 4599,
       originalPrice: 4999,
       discount: "25% OFF",
-      image: "/lovable-uploads/b7ae74a5-d94d-4c18-90a4-f85d067acf0e.png"
+      image: "/lovable-uploads/bread.webp"
     },
     {
-      id: 3,
+      id: 4,
       name: "Cappuccino",
       description: "Served with lorem ipsum",
       price: 1200,
       discount: "25% OFF",
-      image: "/lovable-uploads/76a00dc4-5775-4d96-b7d8-a61dfc668456.png"
+      image: "/lovable-uploads/Cappuccino.jpg"
     },
     {
       id: 4,
@@ -38,7 +38,7 @@ const Menu = () => {
       price: 4599,
       originalPrice: 4999,
       discount: "25% OFF",
-      image: "/lovable-uploads/b7ae74a5-d94d-4c18-90a4-f85d067acf0e.png"
+      image: "/lovable-uploads/bread.webp"
     }
   ];
 
