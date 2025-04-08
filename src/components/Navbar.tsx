@@ -13,7 +13,7 @@ const Navbar = () => {
     { name: "Home", path: "/" },
     { name: "Menu", path: "/menu" },
     { name: "Contact", path: "/contact" },
-    { name: "Shop", path: "/shop" }
+    { name: "Shop", path: "/"  }
   ];
 
   const isActive = (path: string) => {
