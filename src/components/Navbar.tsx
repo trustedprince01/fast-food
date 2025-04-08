@@ -104,6 +104,13 @@ const Navbar = () => {
             ))}
           </ul>
           <div className="mt-6 px-6">
+            {/* Cart Icon Inside Mobile Menu */}
+            <div className="relative flex items-center mb-4">
+              <ShoppingCart className="h-6 w-6 text-gray-800 hover:text-[#ff8a00] transition-colors cursor-pointer" />
+              <span className="absolute -top-2 right-0 bg-[#ff8a00] text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
+                2
+              </span>
+            </div>
             <div className="relative flex items-center w-full">
               <Search className="absolute left-3 text-gray-400 h-5 w-5" />
               <input
@@ -111,13 +118,6 @@ const Navbar = () => {
                 placeholder="Search"
                 className="bg-gray-100 pl-10 pr-4 py-3 rounded-full w-full text-base focus:outline-none focus:ring-2 focus:ring-[#ff8a00]/50"
               />
-            </div>
-            {/* Cart Icon Inside Mobile Menu */}
-            <div className="relative flex items-center">
-              <ShoppingCart className="h-6 w-6 text-gray-800 hover:text-[#ff8a00] transition-colors cursor-pointer" />
-              <span className="absolute -top-2 -right-2 bg-[#ff8a00] text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
-                2
-              </span>
             </div>
           </div>
         </div>
