@@ -36,7 +36,7 @@ const Footer = () => {
       </div>
   
       {/* Footer Links */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 py-8">
         {/* Services */}
         <div>
           <h3 className="font-bold mb-4">Services</h3>
@@ -60,7 +60,7 @@ const Footer = () => {
         </div>
   
         {/* Help */}
-        <div className="text-center lg:text-left">
+        <div>
           <h3 className="font-bold mb-4">Help</h3>
           <ul className="space-y-3">
             <li><button className="text-gray-400 hover:text-white">FAQs</button></li>
