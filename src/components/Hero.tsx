@@ -56,7 +56,7 @@ const Hero = () => {
 
           <div className="relative flex justify-center items-center">
             <img 
-              src="/lovable-uploads/6cedf8f1-18ac-46d5-8682-220cd2df9420.png" 
+              src="/lovable-uploads/heroimage.png" 
               alt="Food Delivery" 
               className="w-full max-w-xl mx-auto"
             />
